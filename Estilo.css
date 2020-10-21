@@ -1,0 +1,49 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+}
+.nav {
+  margin: 30px auto;
+  background-color: #46859e;
+  list-style: none;
+}
+@media screen and (min-width: 593px) {
+  .nav {
+    display: flex;
+  }
+}
+.nav > li {
+  list-style: none;
+}
+.nav li {
+  list-style: none;
+}
+.nav > li > a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+.nav li a:hover {
+  color: rgba(34, 231, 83, 0.493);
+}
+.submenu {
+  position: absolute;
+  background-color: #57bbc9;
+  display: none;
+}
+.submenu li a {
+  display: block;
+  padding: 15px;
+  color: white;
+}
+.submenu li a:hover {
+  color: yellow;
+}
+.nav li:hover .submenu {
+  display: block;
+}

@@ -1,0 +1,65 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.nav {
+    
+    margin: 30px auto;
+    background-color: rgb(70, 133, 158);
+    list-style: none;
+    
+    @media screen and (min-width: 593px){
+        display: flex;
+        
+    }
+    
+}
+.nav > li{
+    
+    list-style: none;  
+    
+}
+.nav li{
+    list-style: none; 
+    
+}
+.nav > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.nav li a:hover{
+    color: rgba(34, 231, 83, 0.493);
+}
+
+.submenu {
+    position: absolute;
+    background-color: rgb(87, 187, 201);
+    display: none;
+    
+    
+    
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: white;
+   
+    
+    
+}
+.submenu li a:hover{
+    color: yellow;
+}
+.nav li:hover .submenu{
+    display: block;
+}
